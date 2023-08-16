@@ -1,0 +1,23 @@
+{
+  "name": "vanilla-typescript-vite",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.13",
+    "vite-plugin-babel": "^1.1.3"
+  },
+  "keywords": [
+    "vanilla",
+    "typescript",
+    "vite"
+  ],
+  "description": "Vanilla + Typescript + Vite"
+}
