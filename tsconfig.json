@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "jsx": "preserve",
+    "jsx": "react",
+    "jsxFactory": "dommy",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -15,5 +16,5 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true
   },
-  "include": ["./src"]
+  "include": ["./vite-src"]
 }

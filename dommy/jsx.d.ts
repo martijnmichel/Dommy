@@ -1,11 +1,11 @@
 import { DommyNode } from "./index.d";
 
 export namespace JSXInternal {
-  export interface HTMLAttributes<T extends Element> {
+  export type HTMLAttributes<T extends Partial<HTMLElement>> = {
     className?: string;
-    id?: string;
-    onClick?: () => any;
-  }
+    doClick?: () => any;
+    style?: Partial<CSSStyleDeclaration>;
+  } & Partial<Omit<T, "style">>;
 
   export interface Element extends DommyNode<any> {}
 
@@ -14,5 +14,8 @@ export namespace JSXInternal {
     a: HTMLAttributes<HTMLAnchorElement>;
     div: HTMLAttributes<HTMLDivElement>;
     ul: HTMLAttributes<HTMLUListElement>;
+    li: HTMLAttributes<HTMLLIElement>;
+    p: HTMLAttributes<HTMLParagraphElement>;
+    img: HTMLAttributes<HTMLImageElement>;
   }
 }

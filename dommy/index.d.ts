@@ -4,11 +4,9 @@ import { JSXInternal } from "./jsx.d";
 
 export import JSX = JSXInternal;
 
-export type DommyNode<T extends any = {}> = {
-  type: "div" | "p" | "ul" | "li" | "string";
-  props?: {
-    className?: string;
-  };
+export type DommyNode<T extends Partial<HTMLElement> = {}> = {
+  type: keyof JSX.IntrinsicElements;
+  props?: JSX.HTMLAttributes<T>;
   children?: ComponentChild[];
 };
 
