@@ -1,4 +1,4 @@
-import dommy from "../dommy";
+import freedom from "../freedom";
 
 const Content = (
   <div

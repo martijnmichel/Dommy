@@ -1,7 +1,7 @@
-/** @jsx dommy */
-import type { DommyNode, ComponentChild} from "./index.d";
+/** @jsx freedom */
+import type { DommyNode, ComponentChild} from ".";
 
-export function dommy(
+export function freedom(
   type: DommyNode["type"],
   props: DommyNode["props"],
   ...children: ComponentChild[]

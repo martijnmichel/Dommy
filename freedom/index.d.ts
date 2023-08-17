@@ -1,5 +1,4 @@
-export as namespace dommy;
-
+export as namespace freedom;
 
 export import JSX = JSXInternal;
 
@@ -12,7 +11,6 @@ export type DommyNode<T extends Partial<HTMLElement> = {}> = {
 export type ComponentChild = DommyNode | string;
 
 export type ComponentChildren = ComponentChild[] | ComponentChild;
-
 
 export namespace JSXInternal {
   export type HTMLAttributes<T extends Partial<HTMLElement>> = {

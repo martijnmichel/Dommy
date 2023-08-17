@@ -1,9 +1,9 @@
 {
-  "name": "vanilla-typescript-vite",
-  "version": "0.0.0",
+  "name": "freedom-lib",
+  "version": "0.0.1",
   
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 4000",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -24,13 +24,13 @@
     "typescript",
     "vite"
   ],
-  "main": "./dist/dommy.umd.js",
-  "module": "./dist/dommy.es.js",
+  "main": "./dist/freedom.umd.js",
+  "module": "./dist/freedom.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/dommy.es.js",
-      "require": "./dist/dommy.umd.js"
+      "import": "./dist/freedom.es.js",
+      "require": "./dist/freedom.umd.js"
     }
   },
   "description": "Vanilla + Typescript + Vite"

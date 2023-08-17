@@ -15,5 +15,5 @@
       }
     ]
   ],
-  "plugins":[["transform-react-jsx", { "pragma": "dommy" }]]
+  "plugins":[["transform-react-jsx", { "pragma": "freedom" }]]
 }

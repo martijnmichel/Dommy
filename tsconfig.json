@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "jsxFactory": "dommy",
+    "jsxFactory": "freedom",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -16,5 +16,5 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true
   },
-  "include": ["./vite-src", "./dommy"]
+  "include": ["./vite-src", "./freedom"]
 }
