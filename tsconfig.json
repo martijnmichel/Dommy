@@ -16,5 +16,5 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true
   },
-  "include": ["./vite-src"]
+  "include": ["./vite-src", "./dommy"]
 }

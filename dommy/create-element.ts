@@ -1,5 +1,5 @@
 /** @jsx dommy */
-import type { DommyNode, ComponentChild } from "./index.d";
+import type { DommyNode, ComponentChild} from "./index.d";
 
 export function dommy(
   type: DommyNode["type"],

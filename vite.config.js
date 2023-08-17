@@ -1,10 +1,14 @@
 import { defineConfig } from "vite";
 import babel from "vite-plugin-babel";
 import { resolve } from "path";
+import dts from 'vite-plugin-dts';
 export default defineConfig({
   plugins: [
     // Babel will try to pick up Babel config files (.babelrc or .babelrc.json)
+    dts({ include: ['./dommy']}
+      ),
     babel(),
+   
   ],
 
   build: {
@@ -15,10 +19,6 @@ export default defineConfig({
       // the proper extensions will be added
       fileName: "dommy",
     },
-    rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: [],
-    },
+    
   },
 });
