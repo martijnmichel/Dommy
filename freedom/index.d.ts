@@ -2,6 +2,10 @@ export as namespace freedom;
 
 export import JSX = JSXInternal;
 
+export * from './create-element';
+export * from './render';
+
+
 export type DommyNode<T extends Partial<HTMLElement> = {}> = {
   type: keyof JSX.IntrinsicElements;
   props?: JSX.HTMLAttributes<T>;

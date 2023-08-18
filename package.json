@@ -1,6 +1,6 @@
 {
   "name": "freedom-lib",
-  "version": "0.0.1",
+  "version": "0.0.8",
   
   "scripts": {
     "dev": "vite --port 4000",
@@ -12,6 +12,7 @@
     "@babel/core": "^7.22.10",
     "@babel/preset-env": "^7.22.10",
     "autoprefixer": "^10.4.15",
+    "npmignore": "^0.3.0",
     "postcss": "^8.4.28",
     "tailwindcss": "^3.3.3",
     "typescript": "^4.4.4",
@@ -29,8 +30,14 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/freedom.es.js",
-      "require": "./dist/freedom.umd.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default":"./dist/freedom.es.js"
+      },
+      "require":{
+        "types": "./dist/index.d.ts",
+        "default":"./dist/freedom.umd.js"
+      }
     }
   },
   "description": "Vanilla + Typescript + Vite"
